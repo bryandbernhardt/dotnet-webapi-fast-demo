@@ -1,0 +1,1 @@
+public record ProductDto(string Code, string Name, string Description, int CategoryId, IEnumerable<string> Tags);

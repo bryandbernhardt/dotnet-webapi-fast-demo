@@ -1,0 +1,38 @@
+@CourseApi_HostAddress = http://localhost:5081
+
+POST {{CourseApi_HostAddress}}/products
+Content-Type: application/json
+
+{
+  "code": "45235232",
+  "name": "Memory 64gb",
+  "description": "Teste",
+  "categoryId": 1,
+  "tags": [ "hardware", "memory", "64gb" ]
+}
+
+###
+
+GET {{CourseApi_HostAddress}}/products
+
+###
+
+GET {{CourseApi_HostAddress}}/products/1
+
+###
+
+PUT {{CourseApi_HostAddress}}/products/4
+Content-Type: application/json
+
+{
+  "active": true,
+  "code": "4",
+  "name": "HD 1tb Seagate",
+  "description": "Teste",
+  "categoryId": 1,
+  "tags": [ "hardware", "storage", "1tb"]
+}
+
+###
+
+DELETE {{CourseApi_HostAddress}}/products/1
