@@ -12,7 +12,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 ## 🚀 Rodando
 
-Obs: Criar container para o banco de dados ou instalar (MySQL Server).
+Obs: Criar container para o banco de dados ou instalar (SQL Server 2025).
 ```
 dotnet ef database update
 dotnet run
